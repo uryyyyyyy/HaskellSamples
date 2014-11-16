@@ -16,6 +16,8 @@ str = intToStr b
 
 main :: IO()
 main = do
+    --rd <- readLine
+    --println(intToStr(rd))
     println str
     let str2 = intToStr(strToInt(str))
     writeToFile str2
