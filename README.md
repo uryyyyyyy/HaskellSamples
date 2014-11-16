@@ -1,16 +1,33 @@
 
+## pre set up
+
+when your cabal version is under 1.18
+
+```
+ # install newest cabal
+cabal install cabal-install
+
+ # replace default cabal
+sudo cp ~/.cabal/bin/cabal /usr/bin/
+
+cabal --v
+# may be upper 1.18
+```
+
+now, you can use `cabal sandbox` command
 
 ## Set up
 
 ```
-cabal update
-cabal install hspec
+cabal sandbox init
+cabal install
+cabal configure
+
 ```
 
 ## build
 
 ```
-cabal configure --enable-tests
 cabal build
 ```
 
@@ -23,10 +40,7 @@ cabal test
 ## run
 
 ```
-./dist/build/[projectName]/[moduleName]
-
- # example
-./dist/build/hello(projectName)/hello(moduleName)
+cabal run
 ```
 
 ## development
