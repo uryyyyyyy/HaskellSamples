@@ -10,8 +10,14 @@ cabal install hspec
 ## build
 
 ```
-cabal configure
+cabal configure --enable-tests
 cabal build
+```
+
+## tests
+
+```
+cabal test
 ```
 
 ## run
@@ -19,10 +25,12 @@ cabal build
 ```
 ./dist/build/[projectName]/[moduleName]
 
-# example
+ # example
 ./dist/build/hello(projectName)/hello(moduleName)
 ```
 
 ## development
 
-leksah
+use leksah
+
+package -> add -> select [projectRoot]

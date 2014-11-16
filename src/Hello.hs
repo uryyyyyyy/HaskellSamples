@@ -1,4 +1,7 @@
--- src/Hello.hs
 
-main :: IO ()
-main = putStrLn("hello")
+module Hello (
+    println
+) where
+
+println :: String -> IO ()
+println s = putStrLn(s)
