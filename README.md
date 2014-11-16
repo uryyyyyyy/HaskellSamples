@@ -33,4 +33,4 @@ cabal test
 
 use leksah
 
-package -> add -> select [projectRoot]
+package -> add -> select [projectRoot]/hello.cabal

@@ -1,23 +1,17 @@
 module Main where
 
-import CalculatorSample
 import Hello
-import Converter
-import FileUtil
+import Triangle
 
-a :: Integer
-a = strToInt "3"
 
-b :: Integer
-b = getSum a
+a :: [(Integer, Integer, Integer)]
+a = solve 10
 
-str :: String
-str = intToStr b
+b = map tupleToString a
+c = strListToString b
 
 main :: IO()
 main = do
     --rd <- readLine
     --println(intToStr(rd))
-    println str
-    let str2 = intToStr(strToInt(str))
-    writeToFile str2
+    println c
