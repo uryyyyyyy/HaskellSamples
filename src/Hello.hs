@@ -1,7 +1,7 @@
 
 module Hello (
     println,
-    printNum,
+    printShow,
     printNumList,
     readLine,
     readLine2,
@@ -12,8 +12,8 @@ module Hello (
 println :: String -> IO ()
 println s = putStrLn(s)
 
-printNum :: Int -> IO ()
-printNum s = putStrLn(show s)
+printShow :: Show a => a -> IO ()
+printShow s = print s
 
 intListToString :: [Int] -> String
 intListToString [] = "EOF"

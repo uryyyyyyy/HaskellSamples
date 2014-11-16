@@ -11,7 +11,8 @@ executable hello
     main-is: Main.hs
     buildable: True
     hs-source-dirs: src src/util src/studies
-    other-modules: ListSample FileUtil Converter CalculatorSample Hello Triangle
+    other-modules: ShapeUtil ListSample FileUtil Converter CalculatorSample
+                   Hello Triangle
     ghc-options: -Wall
  
 test-suite spec

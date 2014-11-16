@@ -2,16 +2,15 @@ module Main where
 
 import Hello
 import Triangle
+import ShapeUtil
 
-
-a :: [(Integer, Integer, Integer)]
-a = solve 10
-
-b = map tupleToString a
-c = strListToString b
+circle = Circle (Point 10 10) 10
+a = area circle
 
 main :: IO()
 main = do
     --rd <- readLine
     --println(intToStr(rd))
-    println c
+    printShow a
+    printShow circle
+
